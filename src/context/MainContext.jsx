@@ -11,7 +11,7 @@ export const MainContext = createContext();
 
 const MainProvider = ({ children }) => {
 
-  // ✅ Signup
+  //  Signup
   const signup = async (userData) => {
     try {
       const res = await axios.post(`${API_USER}/api/user/register`, userData);
@@ -22,7 +22,7 @@ const MainProvider = ({ children }) => {
     }
   };
 
-  // ✅ Login
+  //  Login
   const login = async (userData) => {
     try {
       console.log(userData, "===userData");

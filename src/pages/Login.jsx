@@ -24,8 +24,11 @@ const Loginpage = () => {
       password: password
     };
 
-    const res = await login(userData);  
+    const res = await login(userData);
+    console.log(res,"===res");
+    
 
+// navigate("/dashboard");  
     if(res){
       alert("Login Successful ");
       navigate("/dashboard");   
@@ -37,10 +40,6 @@ const Loginpage = () => {
 
   return (
     <div className="bg">
-
-    
-
-
       <div className="login-right">
         <div className="login-rightinbox">
 
